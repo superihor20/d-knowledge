@@ -1,4 +1,7 @@
 module.exports = {
   reactStrictMode: true,
-  transpilePackages: ["ui"],
+  transpilePackages: ['ui'],
+  env: {
+    NEXT_PUBLIC_API: process.env.API,
+  },
 };

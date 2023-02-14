@@ -1,8 +1,7 @@
 import Axios, { AxiosError, InternalAxiosRequestConfig } from 'axios';
 
 export const axios = Axios.create({
-  // TODO: configurate global env
-  baseURL: 'baseUrl', //process?.env?.NEXT_PUBLIC_API,
+  baseURL: process.env.API || process.env.NEXT_PUBLIC_API,
 });
 
 const authRequestInterceptor = (
