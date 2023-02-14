@@ -27,5 +27,6 @@ module.exports = {
       },
     ],
     'react-hooks/exhaustive-deps': 'off',
+    'import/no-named-as-default': 'off',
   },
 };
